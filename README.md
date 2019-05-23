@@ -1,6 +1,6 @@
 # NC State Brand Utility Bar
 
-**IMPORTANT NOTE:** This fork of the utility bar is for minor edits for compatibility for use in a ServiceNow service portal. In pretty much every other use case, you should use the [master branch from UComm](https://github.com/ncstate/utility-bar).
+**IMPORTANT NOTE:** This fork of the utility bar is for minor edits for compatibility for use in a ServiceNow service portal, and the fork was made with permission from UComm. In pretty much every other use case, you should use the [master branch from UComm](https://github.com/ncstate/utility-bar).
 
 -----
 
