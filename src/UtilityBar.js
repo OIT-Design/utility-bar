@@ -61,12 +61,12 @@ export default class UtilityBar {
         this.insertCss();
 
         var barPlaceholder,
-            documentBody = document.body;
-
-        if ((barPlaceholder = document.getElementById('ncstate-utility-bar')) && barPlaceholder.parentNode == documentBody) {
-            documentBody.replaceChild(this.bar, barPlaceholder);
+            barContainer = document.getElementById('header-contents');
+            
+        if ((barPlaceholder = document.getElementById('ncstate-utility-bar')) && barPlaceholder.parentNode == barContainer) {
+            barContainer.replaceChild(this.bar, barPlaceholder);
         } else {
-            documentBody.insertBefore(this.bar, documentBody.firstChild);
+            barContainer.insertBefore(this.bar, barContainer.firstChild);
         }
 
         this.initBarControls();
