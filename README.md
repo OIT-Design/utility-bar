@@ -1,5 +1,9 @@
 # NC State Brand Utility Bar
 
+**IMPORTANT NOTE:** This fork of the utility bar is for minor edits for compatibility for use in a ServiceNow service portal. In pretty much every other use case, you should use the [master branch from UComm](https://github.com/ncstate/utility-bar).
+
+-----
+
 The NC State brand utility bar offers a simple way to connect our thousands of websites and let Web users know where they are at all times. Details and requirements regarding usage of the utility bar on official NC State sites can be found at [brand.ncsu.edu/downloads#utility-bar](https://brand.ncsu.edu/downloads#utility-bar).
 
 ## Development
