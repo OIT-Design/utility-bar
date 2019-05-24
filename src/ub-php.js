@@ -21,15 +21,10 @@ class loadUb {
         window._ub = new UtilityBar(this.options);
         window.addEventListener('DOMContentLoaded', () => {
 
-
-            console.log('0');
-
         var targetNode = document.body;
 
         if(targetNode){
         
-            console.log('1');
-
             var config = {
                 childList: true,
                 subtree: true
@@ -37,29 +32,17 @@ class loadUb {
 
             var obsCallback = function(mutationsList) {
 
-                console.log('2');
-
                 var myBarPlaceholder = document.getElementById('ncstate-utility-bar');
 
                 for(var mutation of mutationsList) {
-
-                    console.log('3');
-
-                    if ( myBarPlaceholder && !document.getElementsByClassName('ncstate-utility-bar-tools') ) {
-                        console.log( '4' );
-
-                        window._ub.render(); // THIS IS THE IMPORTANT LINE THAT RENDERS THE BRAND BAR
-                        
+                    if ( myBarPlaceholder && myBarPlaceholder.hasChildNodes() == false ) {
+                        window._ub.render(); // THIS IS THE IMPORTANT LINE THAT RENDERS THE BRAND BAR    
                     } else{
-                        console.log('5');
-
                     // Stop observing, we did what we needed
                     observer.disconnect();
                   }
                 }
             };
-            console.log('6');
-
 
             // Create a new observer
             var observer = new MutationObserver(obsCallback);
@@ -68,8 +51,6 @@ class loadUb {
             observer.observe(targetNode, config);
         
         }
-
-        console.log('7');
 
         }, false);
 

@@ -58,9 +58,6 @@ $red-search-bg: $red-accent-color;
 $red-search-highlight: #bd0000;
 
 
-html { margin-top: 30px !important; }
-* html body { margin-top: 30px !important; } 
-
 // main Styles 
 
 #ncstate-utility-bar {
@@ -134,7 +131,7 @@ html { margin-top: 30px !important; }
 		    width: 970px;
 		}
 		@media (min-width: 1200px) {
-		    width: 1170px;
+		    width: 1200px;
 		}
 	}
 
